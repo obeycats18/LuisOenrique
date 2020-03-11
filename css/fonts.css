@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "AsapRegular";
+  src: url("../fonts/Asap/Asap-Regular.ttf");
+  src: url("../fonts/Asap/Asap-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AsapMedium";
+  src: url("../fonts/Asap/Asap-Medium.ttf");
+  src: url("../fonts/Asap/Asap-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AsapSemiBold";
+  src: url("../fonts/Asap/Asap-SemiBold.ttf");
+  src: url("../fonts/Asap/Asap-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AsapBold";
+  src: url("../fonts/Asap/Asap-Bold.ttf");
+  src: url("../fonts/Asap/Asap-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AsapItalic";
+  src: url("../fonts/Asap/Asap-Italic.ttf");
+  src: url("../fonts/Asap/Asap-Italic.ttf") format("truetype");
+}
+
+/*Миксины для шрифтов*/
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,32 @@
+.services
+    background-color: #f6f6f6
+    &__block
+        &_service-wrapper
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            width: 100%
+            margin: 0 auto
+            &-item           
+                display: flex
+                flex-direction: column
+                text-align: center
+                width: 33.3%
+                padding-bottom: 50px
+                &-text
+                   font-size: 20px
+                   padding-top: 15px  
+                   color: $text_color 
+
+@media(max-width: 768px)
+    .services
+       &__block
+           &_service-wrapper
+               &-item   
+                   width: 50% 
+@media(max-width: 460px)
+    .services
+       &__block
+           &_service-wrapper
+               &-item   
+                   width: 100%                    

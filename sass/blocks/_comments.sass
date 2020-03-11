@@ -1,0 +1,87 @@
+.comment__block
+    &-wrapper-slider
+       width: 100%
+       border: 2px solid #212121 
+       padding: 50px
+       overflow: hidden
+       display: flex
+       position: relative
+       &-item 
+           display: flex!important
+           flex-direction: row
+           justify-content: center
+           align-items: center
+           padding: 50px
+           &-img 
+               min-width: 20%
+               padding-right: 20px
+           &-text
+               .name
+                   font-size: 30px 
+                   letter-spacing: 1.5px
+                   +asapBold
+                   text-transform: uppercase
+               .activity
+                   font-size: 13px   
+                   +asapItalic
+                   padding-top: 5px
+                   color: darken($accent_color, 30%)
+                   letter-spacing: 1px 
+               .comment
+                   text-transform: uppercase
+                   letter-spacing: 1.3px
+                   line-height: 1.4
+                   width: 80%
+
+//Slick Dots Style
+.slick-dots   
+    position: absolute
+    display: flex
+    justify-content: center
+    bottom: 5%  
+    .slick-active
+        background-color: #212121         
+    li
+        position: relative
+        width: 20px
+        height: 20px   
+        background-color: transparent
+        border: 1px solid #212121
+        transition: all .2s ease
+        button:before 
+            content: ''
+            width: 20px
+            height: 20px   
+            background-color: transparent
+    
+@media(max-width: 1200px)
+    .comment__block
+        &-wrapper-slider
+            &-item 
+                &-img
+                    display: none
+
+@media(max-width: 830px)
+    .comment__block
+        &-wrapper-slider
+            &-item 
+                padding: 20px
+                &-text
+                    .comment
+                        width: 100%
+@media(max-width: 450px)
+    .section-title 
+        font-size: 30px
+    .comment__block
+        &-wrapper-slider
+            padding: 30px
+            &-item 
+                padding: 0
+                &-text
+                    .name 
+                        font-size: 18px
+                    .comment
+                        width: 100%
+                        font-size: 14px
+
+

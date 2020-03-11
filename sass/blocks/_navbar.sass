@@ -1,0 +1,98 @@
+.navbar__block
+    display: flex
+    height: 120px
+    align-items: center
+    &-menu 
+        display: flex
+        width: 100%
+        justify-content: flex-end
+        &-list 
+            display: flex
+            padding: 0
+            margin: 0
+            list-style-type: none
+            justify-content: space-between
+            &-item
+                padding-left: 20px
+                
+                a
+                    font-size: 16px
+                    color:  #515151   
+                    text-decoration: none 
+                    +asapRegular
+                    text-transform: uppercase
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: -5px
+                        left: 0 
+                        background-color: #878787
+                        width: 0
+                        height: 2px
+                        opacity: 0
+                        transition: .25s ease all
+                    &:hover:before
+                        width: 100%
+                        opacity: 1   
+        //Burger button menu                
+        &-burger
+            &-link
+                display: flex
+                position: relative
+                width: 40px
+                height: 40px
+                background-color: #ffffff
+                justify-content: center
+                align-items: center
+                
+                span
+                    position: absolute
+                    width: 20px
+                    height: 2px
+                    background-color: #000000  
+                    &:before
+                        content: ''
+                        width: 20px
+                        height: 2px
+                        background-color: #000000     
+                        position: absolute
+                        top: -5px
+                        transition: all .15s ease 
+                    &:after
+                        content: ''
+                        width: 20px
+                        height: 2px
+                        background-color: #000000     
+                        position: absolute
+                        top: 5px  
+                        transition: all .15s ease 
+                &-active
+                    
+                    span:before
+                        transform: rotate(45deg)
+                        top: 0
+                    span:after
+                        transform: rotate(-45deg) 
+                        top: 0 
+                    span 
+                        height: 0      
+
+                          
+                   
+
+
+//Адаптив
+@media(max-width: 576px)
+    .navbar__block
+        &-menu 
+            &-list 
+                display: none
+
+
+
+@media(min-width: 576px)
+    .navbar__block
+        &-menu 
+            &-burger
+                display: none               

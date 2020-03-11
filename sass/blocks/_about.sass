@@ -1,0 +1,47 @@
+.about__block
+    width: 100%
+    display: flex 
+    &-text
+        text-align-last: 
+        padding-right: 10%
+        .title
+            color: $text_color
+            font-size: 46px
+            text-transform: uppercase
+            position: relative
+            padding-top: 15px
+            &:before
+                content: ''
+                position: absolute
+                top: 0
+                left: 3px
+                width: 13%
+                height: 3px
+                background-color: $text_color
+        .description
+            color: $accent_color
+            line-height: 1.6
+            text-align: justify  
+            padding-bottom: 20px
+    
+@media(max-width: 886px)
+    .about__block
+        flex-direction: column
+        &-text 
+            text-align: center
+            width: 100%
+            padding: 0
+            .title
+                &:before
+                    left: 45%
+            .description
+                text-align: center
+        &-image 
+            width: 100%  
+            display: none  
+      
+@media(max-width: 376px)  
+    .about__block
+        &-text 
+            .title 
+                font-size: 30px  
